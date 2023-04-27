@@ -74,3 +74,19 @@ const m=[1,2,3,4,5,6]
 const ma=m.map((item)=>item).filter((item)=>item%2==0)
     console.log(ma);
 
+//filter-prime numbers
+function isPrime(numbers)
+{
+    if (numbers <= 1)
+        return false;
+    for (let num = 2; num < numbers; num++){
+        if (numbers % num == 0)
+            return false;
+        }
+    return true;
+}
+const primenumberarray=[1,2,3,4,5,6,7,8,9]
+const primefilter=primenumberarray.filter(isPrime)
+console.log("Prime Numbers = "+ primefilter)
+    
+
