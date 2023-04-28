@@ -1,0 +1,19 @@
+.main{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.main_heading{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 100px;
+}
+.user{
+    font-size: 25px;
+    font-weight: bold;
+}
+.counter{
+    border: 2px aqua solid;
+}
+.plus,.minus,.reset {
+    font-size: 20px;
+}

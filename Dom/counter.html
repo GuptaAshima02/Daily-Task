@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="counter.css">
+    <title>Counter</title>
+</head>
+<body class="main">
+    <h1 class="main_heading">Counter</h1>
+    <!-- <label class="user">Enter Number</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="counter" class="counter"/>
+    <button id="plus" class="plus" onclick="Increment()">+</button>
+    <button id="minus" class="minus" onclick="Decrement()">-</button>
+    <button id="reset" class="reset" onclick="Reset()">Reset</button>
+    <script>
+        function Increment(){
+            
+            let inputBox=document.getElementById("counter");
+            let counter=parseInt(inputBox.value);
+            counter=counter+1;
+            inputBox.value=counter;
+        }
+        function Decrement(){
+
+            let inputBox=document.getElementById("counter");
+            let counter=parseInt(inputBox.value);
+            if(counter>0){
+                counter=counter-1;
+            }
+            inputBox.value=counter;
+        }
+        function Reset(){
+
+            let inputBox=document.getElementById("counter");
+            let counter=parseInt(inputBox.value);
+            counter=0;
+            inputBox.value=counter;
+        }
+    </script> -->
+    <label class="user">Enter Number</label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="counter" class="counter"/>
+    <button value="+" onclick="onClick(this)">+</button>
+    <button value="-" class="minus" onclick="onClick(this)">-</button>
+    <button value="reset" onclick="onClick(this)">Reset</button>
+    <script>
+        function onClick(btn){
+            let inputBox=document.getElementById("counter");
+            let counter=parseInt(inputBox.value);
+            if(btn.value=="+"){
+                counter++;
+            }
+            else if(btn.value=="-" && counter>0){
+                counter--;
+            }
+            else{
+                counter=0;
+            }
+            inputBox.value=counter;
+        }
+    </script>
+</body>
+</html>
