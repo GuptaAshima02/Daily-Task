@@ -88,9 +88,79 @@
 
 // console.log(person.age)
 
-//build in objects
-let person={
-    name:"ashima",
-    age:22,
-    occupation:"student",
-    }
+//Explicit binding
+
+// let person={
+//     name:"ashima",
+//     age:22,
+//     getAge:function(location,gender){
+//         console.log(this.age,location,gender)
+//     }
+//     }
+
+//     let person1={
+//         name:"ash",
+//         age:32
+//         }
+        
+// person.getAge.call(person1,"jammu","female")
+// person.getAge.apply(person1,["jammu","female"])    
+// person.getAge();
+
+// let obj={
+//     age:22
+// }
+// let obj1={
+//     age:15
+// }
+// function getAge(){
+//     console.log(this.age)
+// }
+// // obj.age;
+// getAge.call(obj)
+// getAge.call(obj1)
+
+//bind method
+
+// let obj={
+//     age:22
+// }
+// let obj1={
+//     age:15,
+//     getAge:function(){
+//         console.log(this.age)
+//     }
+// }
+
+// // console.log(obj1.getAge.bind(obj))//bound getAge
+// let x = obj1.getAge.bind(obj) 
+// x()
+
+// let obj={
+//     age:22
+// }
+// let obj1={
+//     age:15,
+//     getAge:function(location){
+//         console.log(this.age,location)
+//     }
+// }
+
+// // console.log(obj1.getAge.bind(obj))//bound getAge
+// // let x = obj1.getAge.bind(obj,"jammu") 
+// let x = obj1.getAge.bind(obj) 
+// x("jammu")
+
+let obj={
+    age:22
+}
+let obj1={
+    age:15
+}
+function getAge(){
+    console.log(this.age)
+}
+// let x = getAge.bind(obj)
+let x = getAge.bind(obj1)
+
+x()
