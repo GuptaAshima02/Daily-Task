@@ -17,3 +17,6 @@
 .plus,.minus,.reset {
     font-size: 20px;
 }
+.plus:hover,.minus:hover,.reset:hover{
+    background-color: aqua;
+}
