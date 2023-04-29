@@ -151,16 +151,54 @@
 // let x = obj1.getAge.bind(obj) 
 // x("jammu")
 
-let obj={
-    age:22
-}
-let obj1={
-    age:15
-}
-function getAge(){
-    console.log(this.age)
-}
-// let x = getAge.bind(obj)
-let x = getAge.bind(obj1)
+// let obj={
+//     age:22
+// }
+// let obj1={
+//     age:15
+// }
+// function getAge(){
+//     console.log(this.age)
+// }
+// // let x = getAge.bind(obj)
+// let x = getAge.bind(obj1)
 
-x()
+// x()
+
+//nested object
+
+// let obj={
+//     name:"ashima",
+//     test:{
+//         console.log(this.name)//error
+//     }
+// }
+
+
+// let obj={
+//         name:"ashima",
+//         another:{
+//             name:"test",
+//             getName:function(){console.log(this.name)}
+//         }
+//     }
+
+//hoisting
+
+// myfun();//declaration
+
+// function myfun(){
+//     console.log("called")
+// }
+
+// const a=function(){
+//     console.log("ashh")
+// }
+// a()
+
+// a()//no hoisting in case oif const
+
+// const a=function(){
+//     console.log("ashh")
+// }
+
