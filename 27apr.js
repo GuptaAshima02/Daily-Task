@@ -1,3 +1,4 @@
+//truely falsely
 //convert to boolean
 // let a=Boolean("ashima");
 // let b=Boolean(NaN);
@@ -34,3 +35,15 @@
 // console.log(x)//output-undefined
 // console.log(y)//output-undefined
 // console.log(z)//output-[1,2,3]
+
+// let a="100";
+// let b="200";
+// console.log((+a)+(+b))
+
+// let a="100";
+// let b="200";
+// console.log(a+b)
+
+// let a=100;
+// let b="200";
+// console.log(a+b)
