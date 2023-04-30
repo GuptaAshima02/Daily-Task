@@ -12,7 +12,7 @@
 //     }
 // }
 
- var a=[{name:"ash",
+var a=[{name:"ash",
 location:{
     city:"jammu",
     pincode:180001
