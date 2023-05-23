@@ -202,3 +202,46 @@
 //     console.log("ashh")
 // }
 
+// we can set object literal property using variables in function
+
+// function fun(fname,lname,age){
+//     let person={firstName:fname,
+//     lastName:lname,
+//     age:age
+//     }
+//     console.log(person)
+// };
+// fun("ashima","gupta",22)
+// fun("annie","gupta",20)
+
+// //shorthand syntax
+
+// function fun(firstName,lastName,age){
+//     let person={firstName,
+//     lastName,
+//     age
+//     }
+//     console.log(person)
+// };
+// fun("ashima","gupta",22)
+// // fun("annie","gupta",20)
+
+//Object literal method declaration shorthand
+
+// let person={
+//     age:15,
+//     getAge:function(){
+//         console.log(this.age>=18) //instead of this we can use
+//     }
+// }
+// person.getAge()
+
+let person={
+    age:15,
+    // getAge:function(){
+    //     console.log(this.age>=18) //instead of this we can use
+    getAge(){
+            console.log(this.age>=18)
+    }
+}
+person.getAge()
